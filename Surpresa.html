@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+>
+    <title>Surpresa</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"  rel="stylesheet">
+
+    <div class="imgPlaceHolder">
+        <img src="imgs_gifs/gif1.gif" style="position:absolute; width:200px;height:150px;top:30px;left:25px">
+        <img src="imgs_gifs/gif2.gif" style="position:absolute;width:200px;height:140px;top:50%;left:200px">
+        <img src="imgs_gifs/img2.jpg" style="position: absolute;width: 200px;height: 150px;top:30px;right:25px">
+        <img src="imgs_gifs/img4.jpg" style="position:absolute;width:200px;height:150px;top:40%;right:200px">
+        <img src="imgs_gifs/img3.jpg" style="position:absolute;width:200px;height:150px;bottom:30px;left:100px">
+        <img src="imgs_gifs/gif3.gif" style="position:absolute;width:200px;height:150px;bottom:40px;left:70%">
+        <img src="imgs_gifs/gif4.gif" style="position:absolute;width:200px;height:150px;bottom:40px;left:40%">
+        <img src="imgs_gifs/gif5.gif" style="position:absolute;width:200px;height:150px;top:230px;right:65%">
+        <img src="imgs_gifs/img1.jpg" style="position:absolute;width:200px;height:150px;top:150px;right:45%;">
+        <img src="imgs_gifs/gif6.gif" style="position:absolute;width:200px;height:150px;top:20%;right:25%">
+        
+    </div>
+    <button id="botaoEscondido" 
+        style="width: 150px; color:rgb(255, 255, 255); height: 50px; position:relative; opacity:0;cursor: pointer;top:30px; justify-self: center;"
+        onclick="showText()"
+        ></button>
+
+    <button 
+        id="abrirModal"
+        style="width: 150px; color:black; height: 50px; text-align: center; position:absolute;left: 50%; transform: translateX(-50%); bottom:400px;transition: all 0.3s ease;"
+        onclick="moverOuAbrir()" 
+    >botão nada suspeito</button>
+
+    <div class="modal-background" id="modal-background"></div>
+    <div class="modal-container" id="modal-container">
+        <h4 style="justify-self: center;">O quanto você me ama?</h4>
+        <input  type="number" class ="lPercentage" id="lPercentage">
+        <button 
+        id="enviarMsg" 
+        onclick="enviarMensagem()"
+        style="display: block;position:relative;border:1px, rgb (0,0,0,1);justify-self: center;"
+        >Enviar</button>
+    </div> 
+    <div class="modal-background2" id="modal-background2"></div>
+    <div class="poemCase" id="poemCase" type="text">Eu te amo minha princesa</div>
+    <script src="script.js"></script>                               
+</body>
+</html> 
